@@ -1,0 +1,26 @@
+es:
+  keppler:
+    sidebar-menu:
+      keppler-cv: Keppler cv
+      keppler-cv-submenu:
+        projects: Projects
+        languages: Languages
+    permissions:
+    models:
+      singularize:
+        project: project
+        language: language
+      pluralize:
+        projects: projects
+        languages: languages
+    modules:
+      admin/projects: Projects
+      admin/languages: Languages
+    messages:
+    actions:
+  activerecord:
+    attributes:
+    errors:
+      messages:
+  errors:
+  helpers:

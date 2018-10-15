@@ -1,0 +1,14 @@
+modules:
+  projects:
+    name: Project
+    model: KepplerCvProject
+    actions: [
+      'index', 'create', 'update', 'destroy', 'download', 'upload', 'clone'
+    ]
+
+  languages:
+    name: Language
+    model: KepplerCvLanguage
+    actions: [
+      'index', 'create', 'update', 'destroy', 'download', 'upload', 'clone'
+    ]

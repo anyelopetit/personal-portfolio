@@ -1,0 +1,304 @@
+<keppler-view id='index'>
+<keppler-index>
+  <div class="preloader">
+    <img src="/assets/keppler_frontend/app/a73d9877bdccbcc153f1572d99774624.gif">
+  </div>
+  <div class="background-container">
+    <center>
+      <nav id="navbar">
+        <div class="toggle-menu">
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+        </div>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </center>
+    <section id="home">
+      <center>
+        <div class="main-text">
+          I<span>'</span>m
+          Anyelo
+          Petit<span>.</span>
+          <span class="cursor">
+            |
+          </span>
+          <p>
+            Ruby on Rails Developer &
+            UI/UX Designer
+          </p>
+        </div>
+        </center>
+    </section>
+    <section id="about">
+      <div class="top-section about">
+        <center>
+          <img class="avatar top-content animate fadeIn" src="/assets/keppler_frontend/app/Photoshoot Slicegroup - 1. Oficina-11.jpg">
+          <span class="white section-title top-content">About me</span>
+          <p class="description top-content">
+            Experienced Ruby on Rails developer who is enthusiastic about writing clean, efficient, and accessible code in a functional framework. Committed to the total development lifecycle, the maintenance of code quality and bug-free applications is of the utmost importance. Expert in leveraging the latest software tools to optimize data storage, e-commerce functionality, and fluidity across mobile platforms. A leader in identifying opportunities for applications development.
+          </p>
+          <a href="/download/Anyelo Petit C.V. 27-9-2018.pdf" download>
+          	<button class="top-content">
+              Download CV
+            </button>
+          </a>
+        </center>
+      </div>
+      <div class="container" id="skills">
+        <center>
+        	<img class="avatar top-content animate fadeIn" src="/assets/keppler_frontend/app/41730527_10215006385006941_8105603834543341568_n.jpg">
+        </center>
+        <div class="white section-title top-content">Languages</div>
+        <table class="progress-table top-content">
+          <tbody>
+            <%- @languages.each do |language| -%>
+              <tr class="progress">
+                <th class="progress-text">
+                  <img class="mini-brand" src="<%= language.image %>">
+                  <span class="hidden-xs hidden-sm"><%= language.name %></span>
+                </th>
+                <td>
+                  <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: <%= language.percentage %>%; background-color: #<%= language.color %>;">
+                  	<span class="percentage"><%= language.percentage %>%</span>
+                  </div>
+                </td>
+              </tr>
+            <%- end -%>
+          </tbody>
+        </table>
+        <div class="white section-title top-content">Technical Skills</div>
+        <div class="technical-skills top-content">
+          <div class="skill animate fadeInUp">
+            <i class="fa fa-diamond"></i>
+            <p>
+            	Experienced Ruby on Rails developer with competencies in Jquery, and Ajax.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="fa fa-code"></i>
+            <p>
+            	Knowledgeable and certified in JavaScript.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="fa fa-wrench"></i>
+            <p>
+            	Familiar with the automation of testing platforms.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="fa fa-database"></i>
+            <p>
+            	Able to integrate several databases together to form one database system.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="fa fa-paint-brush"></i>
+            <p>
+            	Masterful with UI styling tool Bootstrap and the Sass CSS preprocessor.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="fa fa-magic"></i>
+            <p>
+            	Clean code writer that is fully versed in object-oriented coding.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="fa fa-line-chart"></i>
+            <p>
+            	Committed to scalable design and function as well as seamless integration.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="fa fa-align-left"></i>
+            <p>
+            	Competent with templating languages on the server side such as Slim and Haml.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="fa fa-money"></i>
+            <p>
+            	Creative with database construction to best support application monetization.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="fa fa-git"></i>
+            <p>
+            	Agile experience using Git versions control for creation and manipulation of code repositories.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section id="portfolio">
+  	<div class="dark section-title">Portfolio</div>
+    <div class="projects-container">
+      <%- @projects.each do |project| -%>
+      	<%- if project.active -%>
+          <a class="project" href="<%= project.url %>">
+            <img class="project-image" src="<%= project.image %>">
+            <div class="project-description">
+              <h3 class="project-name"><%= project.name %></h3>
+              <p>
+                <%= project.description %>
+              </p>
+            </div>
+          </a>
+      	<%- end -%>
+      <%- end -%>
+    </div>
+  </section>
+  <section id="experience">
+  	<div class="white section-title">Experience</div>
+    <div class="time-lines">
+      <div class="time-line animate">
+        <div class="job animate fadeInLeft">
+          <h5 class="date-range"> January 2018 - Now</h5>
+          <h3 class="charge">
+            Back-End Coordinator
+          </h3>
+          <h4 class="company">
+            Slice Group
+          </h4>
+          <div class="responsabilities">
+            <p>- Leadership for a team of approximately nine 9+ Ruby, Python and PHP developers.</p>
+          	<p>- Control of process and monitoring production of Back-End development department.</p>
+            <p>- Planning projects and creating new projects ideas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="time-line animate">
+        <div class="job animate fadeInLeft">
+          <h5 class="date-range">June 2017 – January 2018</h5>
+          <h3 class="charge">
+            Junior Ruby on Rails Developer
+          </h3>
+          <h4 class="company">
+            Slice Group
+          </h4>
+          <div class="responsabilities">
+            <p>- Creation and functional development of web platforms and application</p>
+            <p>- Quickly development using Agile UX and SCRUM methodology.</p>
+          </div>
+        </div>
+      </div>
+      <div class="time-line animate">
+        <div class="job animate fadeInLeft">
+          <h5 class="date-range">September 2016 – June 2017</h5>
+          <h3 class="charge">
+            Front-End Developer
+          </h3>
+          <h4 class="company">
+            Slice Group
+          </h4>
+          <div class="responsabilities">
+            <p>- Designing and preparing detailed web structures using HTML and CSS with Ruby technology.</p>
+            <p>- Measuring designs about web platforms using Responsive Design and UX interfaces.</p>
+          </div>
+        </div>
+      </div>
+      <div class="time-line animate">
+        <div class="job animate fadeInLeft">
+          <h5 class="date-range">January 2016 – September 2016</h5>
+          <h3 class="charge">
+            UI/UX Designer
+          </h3>
+          <h4 class="company">
+            Slice Group
+          </h4>
+          <div class="responsabilities">
+            <p>- Preparation, design and planation of UI design for web platforms with comfortable user experience.</p>
+            <p>- Creation of web wireframes for a future functional development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials">
+  	<div class="dark section-title">Testimonials</div>
+		<div class="carousel">
+      <div class="control prev"><i class="fa fa-arrow-left"></i></div>
+      <div class="carousel-content">
+        <%- 5.times do |i| -%>
+          <div class="testimonial <%= 'active rotate' if i==0 %>">
+            <div class="testimonial-header">
+              <img class="testimonial-image" src="/assets/keppler_frontend/app/IMG_20180714_123253_215.jpg">
+              <div class="testimonial-quote">
+                <i class="fa fa-quote-left"></i>
+                <p>
+                  Hola soy una frase testimonial <%= i %>
+                </p>
+                <i class="fa fa-quote-right"></i>
+              </div>
+            </div>
+            <div class="testimonial-footer">
+              <div class="testimonial-info">
+                <span class="testimonial-name">Anyelo Petit</span>
+                <small class="testimonial-charge">Back-End Coordinator from SliceGroup</small>
+              </div>
+            </div>
+          </div>
+        <%- end -%>
+      </div>
+      <div class="control next"><i class="fa fa-arrow-right"></i></div>
+    </div>
+  </section>
+  <section id="contact">
+  	<div class="form">
+      <div class="contact-info">
+        <h2>
+          CONTACT ME
+        </h2>
+        <p>
+          I am always willing and available to receive new work proposals. Let's start working together!
+        </p>
+        <p>
+          <small>
+            Email: anyelopetit@gmail.com
+            <br>
+            Tel: +58 414 3639602
+          </small>
+        </p>
+        <div class="social-medias">
+          <a href="whatsapp://send?text=&phone=+584143639602">
+          	<i class="fa fa-whatsapp"></i>
+          </a>
+          <a href="https://www.facebook.com/AnyeloPetit96">
+          	<i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/anyelopetit">
+          	<i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://www.github.com/anyelopetit">
+          	<i class="fa fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <%= simple_form_for @message, url: '/app/contact_us/messages/send' do |f| %>
+      	<%= render 'app/layouts/messages' %>
+        <%= f.input :name, label: 'Name', input_html: { required: 'required' } %>
+          <%= f.input :from_email, as: :email, label: 'Email', input_html: { class: 'form-control', required: 'required' } %>
+          <%= f.input :subject, label: 'Subject' %>
+          <%= f.input :content, as: :text, label: 'Content' %>
+          <div id="recaptcha">
+            <%-# raw recaptcha_tags display: { theme: 'custom' }, 'data-callback': 'recaptcha_callback' %>
+          </div>
+          <%= f.submit 'Send' %>
+    		</div>
+    	<%- end -%>
+    <div class="footer">
+      <span>Developed with professionalism and dedication by Anyelo Petit &reg; - 2018</span>
+    </div>
+  </section>
+</keppler-index>
+</keppler-view>
