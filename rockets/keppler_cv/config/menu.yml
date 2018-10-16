@@ -6,6 +6,13 @@ menu:
     icon: layers
     model: User
     submenu:
+      - testimonial:
+          name: testimonials
+          url_path: /admin/cv/testimonials
+          icon: layers
+          current: ['/admin/cv/testimonials']
+          model: KepplerCv::Testimonial
+
       - project:
           name: projects
           url_path: /admin/cv/projects

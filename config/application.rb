@@ -20,6 +20,7 @@ module InyxmaterRails
     # Enable the asset pipeline
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
     config.assets.precompile += ["codemirror*", "codemirror/**/*"]
+    config.assets.initialize_on_precompile = false
 
     # Set Time.zone default to the specified zone and make Active Record
     #   auto-convert to this zone.

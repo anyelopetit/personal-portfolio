@@ -1,4 +1,11 @@
 modules:
+  testimonials:
+    name: Testimonial
+    model: KepplerCvTestimonial
+    actions: [
+      'index', 'create', 'update', 'destroy', 'download', 'upload', 'clone'
+    ]
+
   projects:
     name: Project
     model: KepplerCvProject

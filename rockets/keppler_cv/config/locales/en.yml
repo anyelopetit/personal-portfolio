@@ -3,17 +3,21 @@ en:
     sidebar-menu:
       keppler-cv: Keppler cv
       keppler-cv-submenu:
+        testimonials: Testimonials
         projects: Projects
         languages: Languages
     permissions:
     models:
       singularize:
+        testimonial: testimonial
         project: project
         language: language
       pluralize:
+        testimonials: testimonials
         projects: projects
         languages: languages
     modules:
+      admin/testimonials: Testimonials
       admin/projects: Projects
       admin/languages: Languages
     messages:
