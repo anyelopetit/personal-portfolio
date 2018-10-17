@@ -34,7 +34,7 @@ function navScroll() {
 function activeNav() {
   for (var i = 0; i < ($('nav a').length); i++) {
     hash = $('nav a')[i].hash
-    if ($(document).scrollTop() + 310 > $(hash).offset().top) {
+    if (($(document).scrollTop() + 310) > ($(hash).offset().top)) {
       $('nav a').removeClass('active')
       $('nav a')[i].classList.add('active');
     }
@@ -79,7 +79,7 @@ function scrollToSection(e) {
 
 function carousel3d(carousel) {
   $(carousel + '.carousel .prev').click(function () {
-    prev = $(carousel + ' .item.active.rotate').pre|1v()
+    prev = $(carousel + ' .item.active.rotate').prev()
     if (prev.length == 0) moveCarousel(carousel, $(carousel + ' .item').last())
     else moveCarousel(carousel, prev)
   })
