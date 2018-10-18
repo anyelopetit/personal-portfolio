@@ -7,9 +7,9 @@ module KepplerFrontend
     layout 'layouts/keppler_frontend/app/layouts/application'
     # begin index
     def index
-      @languages = KepplerCv::Language.all
-      @projects = KepplerCv::Project.order(created_at: :desc).first(6)
-      @message = KepplerContactUs::Message.new
+      @languages = rocket('cv', 'lenguages').all
+      @projects = rocket('cv', 'projects').order(created_at: :desc).first(6)
+      @message = rocket('contact_us', 'messages').new
       @testimonials = rocket('cv', 'testimonials').all
     end
     # end index
