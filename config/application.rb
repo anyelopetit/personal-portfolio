@@ -42,6 +42,5 @@ module InyxmaterRails
 
     # config exeption routes
     config.exceptions_app = routes
-
   end
 end
