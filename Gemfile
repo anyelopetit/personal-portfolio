@@ -26,6 +26,7 @@ gem 'sdoc', '1.0.0'
 gem 'coffee-rails', '4.2.2'
 gem 'haml-rails', '1.0'
 gem 'sass-rails', '5.0.7'
+gem 'sprockets-rails', require: 'sprockets/railtie'
 
 gem 'acts_as_list', '0.9.11'
 # gem 'jbuilder', '~> 2.7'
