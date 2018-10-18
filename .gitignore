@@ -28,7 +28,7 @@ db/schema.rb
 *.rbc
 *.sassc
 .redcar/
-# .sass-cache
+.sass-cache
 .byebug_history
 /.byebug_history
 /app/assets/javascripts/guard_javascript/*
