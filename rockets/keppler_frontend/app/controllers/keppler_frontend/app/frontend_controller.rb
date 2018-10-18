@@ -9,7 +9,7 @@ module KepplerFrontend
     def index
       @languages = rocket('cv', 'languages').all
       @projects = rocket('cv', 'projects').order(created_at: :desc).first(6)
-      @message = rocket('contact_us', 'messages').new
+      @message = KepplerContactUs::Message.new
       @testimonials = rocket('cv', 'testimonials').all
     end
     # end index
