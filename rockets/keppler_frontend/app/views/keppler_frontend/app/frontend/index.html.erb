@@ -140,24 +140,26 @@
       </div>
     </section>
   </div>
-  <section id="portfolio">
-  	<div class="dark section-title">Portfolio</div>
-    <div class="projects-container">
-      <%- @projects.each do |project| -%>
-      	<%- if project.active -%>
-          <a class="project" href="<%= project.url %>">
-            <img class="project-image" src="<%= project.image %>">
-            <div class="project-description">
-              <h3 class="project-name"><%= project.name %></h3>
-              <p>
-                <%= project.description %>
-              </p>
-            </div>
-          </a>
-      	<%- end -%>
-      <%- end -%>
-    </div>
-  </section>
+  <% unless @projects.blank? %>
+    <section id="portfolio">
+      <div class="dark section-title">Portfolio</div>
+      <div class="projects-container">
+        <%- @projects.each do |project| -%>
+          <%- if project.active -%>
+            <a class="project" href="<%= project.url %>">
+              <img class="project-image" src="<%= project.image %>">
+              <div class="project-description">
+                <h3 class="project-name"><%= project.name %></h3>
+                <p>
+                  <%= project.description %>
+                </p>
+              </div>
+            </a>
+          <%- end -%>
+        <%- end -%>
+      </div>
+    </section>
+  <% end %>
   <section id="experience">
   	<div class="white section-title">Experience</div>
     <div class="time-lines">
@@ -224,37 +226,39 @@
       </div>
     </div>
   </section>
-  <section id="testimonials">
-  	<div class="dark section-title">Testimonials</div>
-		<div class="testimonials carousel">
-      <div class="control prev"><i class="fa fa-arrow-left"></i></div>
-      <div class="carousel-content">
-        <%- 5.times do |i| -%>
-          <div class="item <%= 'active rotate' if i==0 %>">
-            <div class="item-header">
-              <img class="item-image" src="/assets/keppler_frontend/app/IMG_20180714_123253_215.jpg">
-              <div class="item-quote">
-                <i class="fa fa-quote-left"></i>
-                <p>
-                  Hola soy una frase item <%= i %>
-                </p>
-                <i class="fa fa-quote-right"></i>
+  <% unless @testimonials.blank? %>
+    <section id="testimonials">
+      <div class="dark section-title">Testimonials</div>
+      <div class="testimonials carousel">
+        <div class="control prev"><i class="fa fa-arrow-left"></i></div>
+        <div class="carousel-content">
+          <%- 5.times do |i| -%>
+            <div class="item <%= 'active rotate' if i==0 %>">
+              <div class="item-header">
+                <img class="item-image" src="/assets/keppler_frontend/app/IMG_20180714_123253_215.jpg">
+                <div class="item-quote">
+                  <i class="fa fa-quote-left"></i>
+                  <p>
+                    Hola soy una frase item <%= i %>
+                  </p>
+                  <i class="fa fa-quote-right"></i>
+                </div>
+              </div>
+              <div class="item-footer">
+                <div class="item-info">
+                  <span class="item-name">Anyelo Petit</span>
+                  <small class="item-charge">Back-End Coordinator from SliceGroup</small>
+                </div>
               </div>
             </div>
-            <div class="item-footer">
-              <div class="item-info">
-                <span class="item-name">Anyelo Petit</span>
-                <small class="item-charge">Back-End Coordinator from SliceGroup</small>
-              </div>
-            </div>
-          </div>
-        <%- end -%>
+          <%- end -%>
+        </div>
+        <div class="control next"><i class="fa fa-arrow-right"></i></div>
       </div>
-      <div class="control next"><i class="fa fa-arrow-right"></i></div>
-    </div>
-  </section>
+    </section>
+  <% end %>
   <section id="certificates">
-  	<div class="dark section-title">Testimonials</div>
+  	<div class="dark section-title">Certificates</div>
 		<div class="certificates carousel">
       <div class="control prev"><i class="fa fa-arrow-left"></i></div>
       <div class="carousel-content">

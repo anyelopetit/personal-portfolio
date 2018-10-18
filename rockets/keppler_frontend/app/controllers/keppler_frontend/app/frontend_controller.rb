@@ -10,6 +10,7 @@ module KepplerFrontend
       @languages = KepplerCv::Language.all
       @projects = KepplerCv::Project.order(created_at: :desc).first(6)
       @message = KepplerContactUs::Message.new
+      @testimonials = rocket('cv', 'testimonials').all
     end
     # end index
 

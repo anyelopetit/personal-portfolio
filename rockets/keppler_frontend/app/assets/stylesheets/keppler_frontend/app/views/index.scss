@@ -775,6 +775,21 @@ body {
   }
 }
 
+#certificates {
+  background-size: cover;
+  background-image: linear-gradient(to right top, #ddde, #eeef), url('/assets/keppler_frontend/app/20170128_104108.jpg');
+  background-position: center;
+  min-height: 500px;
+  overflow: hidden;
+
+  .item img {
+    background: #eee;
+    max-height: 500px;
+    max-width: 80vw;
+    transition: .5s ease-in-out;
+  }
+}
+
 #contact {
   background-attachment: fixed;
   background-image: linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .5)), url('/assets/keppler_frontend/app/Photoshoot Slicegroup - 1. Oficina-162.jpg');
