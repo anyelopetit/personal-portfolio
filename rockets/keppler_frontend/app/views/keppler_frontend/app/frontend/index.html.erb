@@ -15,8 +15,13 @@
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <% unless @projects.blank? %>
+          	<li><a href="#portfolio">Portfolio</a></li>
+          <% end %>
           <li><a href="#experience">Experience</a></li>
+          <% unless @certificates.blank? %>
+          	<li><a href="#certificates">Certificates</a></li>
+          <% end %>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -257,20 +262,22 @@
       </div>
     </section>
   <% end %>
-  <section id="certificates">
-  	<div class="dark section-title">Certificates</div>
-		<div class="certificates carousel">
-      <div class="control prev"><i class="fa fa-arrow-left"></i></div>
-      <div class="carousel-content">
-        <%- 5.times do |i| -%>
-          <div class="item <%= 'active rotate' if i==0 %>">
-            <img src="/assets/keppler_frontend/app/Carrera Desarrollo Backend Ruby.png">
-          </div>
-        <%- end -%>
+  <% unless @certificates.blank? %>
+    <section id="certificates">
+      <div class="dark section-title">Certificates</div>
+      <div class="certificates carousel">
+        <div class="control prev"><i class="fa fa-arrow-left"></i></div>
+        <div class="carousel-content">
+          <%- @certificates.each_with_index do |certificate, index| -%>
+            <div class="item <%= 'active rotate' if index==0 %>">
+              <img src="<%= certificate.image.url %>">
+            </div>
+          <%- end -%>
+        </div>
+        <div class="control next"><i class="fa fa-arrow-right"></i></div>
       </div>
-      <div class="control next"><i class="fa fa-arrow-right"></i></div>
-    </div>
-  </section>
+    </section>
+  <% end %>
   <section id="contact">
   	<div class="form">
       <div class="contact-info">

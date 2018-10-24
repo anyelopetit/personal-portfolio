@@ -11,6 +11,7 @@ module KepplerFrontend
       @projects = rocket('cv', 'projects').order(created_at: :desc).first(6)
       @message = KepplerContactUs::Message.new
       @testimonials = rocket('cv', 'testimonials').all
+      @certificates = rocket('cv', 'certificates').all
     end
     # end index
 
