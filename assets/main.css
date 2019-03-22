@@ -660,7 +660,7 @@ body {
 }
 #contact {
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .5)), url('office3.jpg');
+  background-image: linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .5)), url('me.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -673,7 +673,7 @@ body {
   background: #111 cc;
   display: flex;
   min-height: 450px;
-  padding: 20px 5% 50px;
+  padding: 50px 5%  ;
   position: relative;
   width: 100%;
 }
@@ -853,7 +853,7 @@ a:hover, a:focus {
 }
 .fadeIn.animated {
   opacity: 1;
-  transition: 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 .fadeInUp.animate {
   opacity: 0;
@@ -862,14 +862,14 @@ a:hover, a:focus {
 .fadeInUp.animated {
   opacity: 1;
   transform: translateY(0);
-  transition: 1s ease-in-out !important;
+  transition: opacity 1s ease-in-out !important;
 }
 .grow-width.animate {
   width: 0 !important;
 }
 .grow-width.animated {
   width: initial;
-  transition: 0.75s ease-in-out;
+  transition: width 0.75s ease-in-out;
 }
 .fadeInLeft.animate {
   opacity: 0;
@@ -878,14 +878,14 @@ a:hover, a:focus {
 .fadeInLeft.animated {
   opacity: 1;
   transform: translateX(0);
-  transition: 1s ease-in-out !important;
+  transition: opacity 1s ease-in-out !important;
 }
 .grow-width.animate {
   width: 0 !important;
 }
 .grow-width.animated {
   width: initial;
-  transition: 0.75s ease-in-out;
+  transition: width 0.75s ease-in-out;
 }
 .time-line.animate:before {
   opacity: 0 !important;
@@ -899,7 +899,10 @@ a:hover, a:focus {
 }
 .time-line.animated:after {
   height: 100% !important;
-  transition: 0.5s 0.5s ease-in-out;
+  transition: height 0.5s 0.5s ease-in-out;
+}
+iframe {
+  max-width: 100%;
 }
 @keyframes navigateDown {
   0% {
