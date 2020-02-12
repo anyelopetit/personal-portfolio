@@ -17,7 +17,7 @@ $(document).ready(function () {
 
   toggleMenu($('.toggle-menu'))
 
-  parallaxOnMouseMove($('.main-text'))
+  parallax($('.main-text'))
 
   carousel3d('.testimonials')
   carousel3d('.certificates')
@@ -58,6 +58,44 @@ function parallaxOnMouseMove(elem) {
       transform: `translate(${(($(window).width() / 2) - event.pageX) * .005}px, ${(($(window).width() / 2) - event.pageY) * .005}px)`
     })
   })
+}
+
+function parallax($object, multiplier) {
+  var event_pageX = 0;
+  var event_pageY = 0;
+
+  $object.closest('section').css({ 'background-attatchment': 'fixed' });
+  $object.closest('section').mousemove(function (event) {
+    event_pageX = event.pageX;
+    event_pageY = event.pageY;
+    $object.closest('section').css({
+      'background-position': bg_css(event_pageX, event_pageY, multiplier, .002)
+    })
+    $object.css({
+      transform: `translate(${bg_css(event_pageX, event_pageY, multiplier, .005)})`
+    })
+  })
+
+  $(window).scroll(function () {
+    $object.closest('section').css({
+      'background-position': bg_css(event_pageX, event_pageY, multiplier, .002)
+    });
+
+    $object.css({
+      transform: `translate(${bg_css(event_pageX, event_pageY, multiplier, .005)})`
+    })
+  });
+}
+
+function bg_css(event_pageX, event_pageY, multiplier, percentage) {
+  multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+  multiplier = 1 - multiplier;
+  var $doc = $(document);
+  var from_top = $doc.scrollTop();
+  var x = (($(window).width() / 2) - event_pageX) * percentage;
+  var y = (($(window).width() / 2) - event_pageY) * percentage;
+  var parallax = (multiplier * from_top);
+  return `${x}px ${parallax}px, ${y}px ${parallax}px`
 }
 
 function animateInScroll() {
