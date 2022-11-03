@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Raleway:400,600');
-body {
+html, body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
   margin: 0;
+  color: #333;
 }
 .preloader {
   align-items: center;
@@ -248,10 +251,10 @@ body {
   padding: 0 10%;
   width: 100%;
 }
-#skills .progress-table th {
+#skills .progress-table .progress-text {
   width: 10px;
 }
-#skills .progress-table th .mini-brand {
+#skills .progress-table .progress-text .mini-brand {
   max-height: 20px;
 }
 #skills .progress-table td {
@@ -282,8 +285,7 @@ body {
   transition: 0.3s ease-out;
 }
 #skills .progress .progress-bar {
-  background-color: #f33 cc;
-  padding: 3px;
+  padding: 5px;
   float: left;
   position: relative;
 }
@@ -301,7 +303,7 @@ body {
   content: '';
   border-bottom: 5px solid transparent;
   border-left: 0 solid transparent;
-  border-right: 5px solid #111 99;
+  border-right: 5px solid #1119;
   border-top: 5px solid transparent;
   opacity: 0;
   position: absolute;
@@ -311,7 +313,7 @@ body {
   transition: 0.3s ease-out;
 }
 #skills .progress .progress-bar .percentage {
-  background: #111 99;
+  background: #1119;
   color: #fff;
   opacity: 0;
   position: absolute;
@@ -342,7 +344,7 @@ body {
   justify-content: center;
 }
 #skills .technical-skills .skill {
-  background: #000 44;
+  background: #0004;
   color: #999;
   cursor: default;
   display: flex;
@@ -361,7 +363,7 @@ body {
   transition: 0.2s ease-in-out;
 }
 #skills .technical-skills .skill:hover {
-  background: #000 66;
+  background: #0006;
   color: #ccc;
   transition: 0.2s ease-in-out;
 }
@@ -373,7 +375,7 @@ body {
   background-color: #fff;
   padding-bottom: 50px;
   padding-top: 50px;
-  min-height: 300px;
+  min-height: 250px;
 }
 #references .container {
   display: flex;
@@ -482,6 +484,7 @@ body {
 #experience .time-lines {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  font-size: 1.2rem;
 }
 @media (max-width: 767px) {
   #experience .time-lines {
@@ -585,7 +588,7 @@ body {
 }
 .carousel .control {
   align-items: center;
-  background: #111 6;
+  background: #1116;
   border-radius: 50%;
   color: #eee;
   cursor: pointer;
@@ -597,7 +600,7 @@ body {
   z-index: 2;
 }
 .carousel .control:hover {
-  background: #111 a;
+  background: #111a;
   transition: 0.2s ease-in-out;
 }
 .carousel .control.next {
@@ -720,7 +723,7 @@ body {
 }
 #contact {
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .5)), url('me.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('office1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -728,6 +731,9 @@ body {
   min-height: 600px;
   padding-bottom: 150px;
   padding-top: 50px;
+}
+#contact::before {
+  filter: grayscale(1);
 }
 #contact .form {
   display: flex;
@@ -772,11 +778,9 @@ body {
   border-radius: 50%;
   color: #fff;
   font-size: 2rem;
-  height: 40px;
   margin: 5px;
   padding: 1rem;
   text-align: center;
-  width: 40px;
   transition: 0.3s ease-in-out;
 }
 #contact .form form {
@@ -841,11 +845,13 @@ section {
 }
 .btn {
   background: transparent;
-  color: #fff;
   border: 1px solid #eee;
+  color: #fff;
+  font-size: 1.5rem;
   margin: 20px;
   padding: 10px 20px;
   transition: 0.2s ease-out;
+  cursor: pointer;
 }
 .btn:hover, .btn:focus, .btn:active {
   background: #f33;
