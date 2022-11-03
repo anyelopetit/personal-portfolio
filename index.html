@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
     integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
   <link href='https://cdn.jsdelivr.net/npm/boxicons@1.9.2/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" media="all" href="assets/application.css" data-turbolinks-track="reload" async="async" />
+  <!-- <link rel="stylesheet" media="all" href="assets/application.css" data-turbolinks-track="reload" async="async" /> -->
   <link rel="stylesheet" media="all" href="assets/main.css" data-turbolinks-track="reload" async="async" />
   <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Patua+One" async="async" />
   <!-- / Javascripts -->
@@ -87,6 +87,7 @@
               <li><a href="#home" class="active">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>
+              <li><a href="#references">References</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#experience">Experience</a></li>
               <li><a href="#certificates">Certificates</a></li>
@@ -232,6 +233,18 @@
                     </div>
                   </td>
                 </tr>
+                <tr class="progress">
+                  <th class="progress-text">
+                    <img class="mini-brand" src="assets/lang/postgres.png">
+                    <span class="hidden-xs hidden-sm">PostgreSQL</span>
+                  </th>
+                  <td>
+                    <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
+                      aria-valuemin="0" aria-valuemax="100" style="width: 70%; background-color: #31648f;">
+                      <span class="percentage">70%</span>
+                    </div>
+                  </td>
+                </tr>
               </tbody>
             </table>
             <div class="white section-title top-content">Technical Skills</div>
@@ -300,6 +313,26 @@
           </div>
         </section>
       </div>
+      <section class="container" id="references">
+        <div class="dark section-title">Companies I worked for</div>
+        <div class="container">
+          <a href="https://www.rankmi.com/" target="_blank" width="200">
+            <img src="assets/companies/rankmi.png" alt="Rankmi" height="50">
+          </a>
+          <a href="https://www.shipit.cl/" target="_blank" width="200">
+            <img src="assets/companies/shipit.png" alt="Shipit" height="30">
+          </a>
+          <a href="https://www.vive.travel/" target="_blank" width="200">
+            <img src="assets/companies/vive-tech.png" alt="Vive" height="50">
+          </a>
+          <a href="https://elitgon.com/" target="_blank" width="200">
+            <img src="assets/companies/elitgon.png" alt="Elitgon" height="40">
+          </a>
+          <a href="https://slicegroup.xyz/" target="_blank" width="200">
+            <img src="assets/companies/slice.png" alt="Slice Group" height="60">
+          </a>
+        </div>
+      </section>
       <section id="portfolio">
         <div class="dark section-title">Portfolio</div>
         <div class="projects-container">
@@ -377,21 +410,77 @@
         <div class="time-lines">
           <div class="time-line animate">
             <div class="job animate fadeInLeft">
-              <h5 class="date-range"> June 2019 - Now</h5>
+              <h5 class="date-range"> November 2021 - Currently</h5>
+              <h3 class="charge">
+                Sr. Backend Developer
+              </h3>
+              <h4 class="company">
+                Rankmi
+              </h4>
+              <ul class="responsabilities">
+                <li>Creating and design of new features for Rails APIs from microservices.</li>
+                <li>Development of endpoints in a Rest API to be consumed from ReactJS.</li>
+                <li>Development of new changes and functional improvements in Rails.</li>
+                <li>Management of queues and messages through AWS SNS and AWS SQS.</li>
+                <li>Creating unit tests at the server level with Rspec.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="time-line animate">
+            <div class="job animate fadeInLeft">
+              <h5 class="date-range"> June 2021 - November 2021</h5>
+              <h3 class="charge">
+                Sr. Rails Developer
+              </h3>
+              <h4 class="company">
+                Shipit CL
+              </h4>
+              <ul class="responsabilities">
+                <li>Maintain and design new functionalities in a project with more than 15 repositories, where each one used different technologies and could be considered as a microservice within the project.</li>
+                <li>Development of endpoints in a Rest API to be consumed from ReactJS.</li>
+                <li>Creating unit tests using Rspec for models, controllers, services, and with jobs.</li>
+                <li>Development of new changes and functional improvements in ReactJS.</li>
+                <li>Creating unit tests at the client level with Cypress.</li>
+                <li>Use of Mixpanel for the creation of statistics of new functions applied.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="time-line animate">
+            <div class="job animate fadeInLeft">
+              <h5 class="date-range"> September 2020 - June 2021</h5>
+              <h3 class="charge">
+                Ssr. Rails Developer
+              </h3>
+              <h4 class="company">
+                ViveTech
+              </h4>
+              <ul class="responsabilities">
+                <li>Take responsibility for maintaining and developing new components of a robust and reactive web E-commerce using Rails 6 and Alpine JS.</li>
+                <li>Creation of images and virtual environments with Docker Compose to later be uploaded to the cloud with Google Cloud Platform.</li>
+                <li>Use of YouTrack for the most efficient handling of tasks in a SCRUM workflow.</li>
+                <li>Management of environments, stores and UI themes for each store in its respective subdomain.</li>
+                <li>Loading and unloading of product inventories through Axlsx and Roo gems.</li>
+                <li>Management of States for each Product, Category and Subcategory.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="time-line animate">
+            <div class="job animate fadeInLeft">
+              <h5 class="date-range"> June 2019 - September 2020</h5>
               <h3 class="charge">
                 Ruby Developer
               </h3>
               <h4 class="company">
                 Elitgon
               </h4>
-              <div class="responsabilities">
-                <p>- Taking responsibility for developing new components of an interactive web application using Ruby on
-                  Rails.</p>
-                <p>- Creating and optimizing a API Rest for the use from an iOS mobile application.</p>
-                <p>- Creating quality UI development with Ruby unit and system testing.</p>
-                <p>- Contributing with other team members via coding reviews, and technical talks.</p>
-                <p>- Suggesting enhancements to existing components that contributes to product goals.</p>
-              </div>
+              <ul class="responsabilities">
+                <li>Taking responsibility for developing new components of an interactive web application using Ruby on
+                  Rails.</li>
+                <li>Creating and optimizing a API Rest for the use from an iOS mobile application.</li>
+                <li>Creating quality UI development with Ruby unit and system testing.</li>
+                <li>Contributing with other team members via coding reviews, and technical talks.</li>
+                <li>Suggesting enhancements to existing components that contributes to product goals.</li>
+              </ul>
             </div>
           </div>
           <div class="time-line animate">
@@ -403,11 +492,11 @@
               <h4 class="company">
                 Slice Group
               </h4>
-              <div class="responsabilities">
-                <p>- Leadership for a team of approximately nine 9+ Ruby, Python and PHP developers.</p>
-                <p>- Control of process and monitoring production of Back-End development department.</p>
-                <p>- Planning projects and creating new projects ideas.</p>
-              </div>
+              <ul class="responsabilities">
+                <li>Leadership for a team of approximately nine 9+ Ruby, Python and PHP developers.</li>
+                <li>Control of process and monitoring production of Back-End development department.</li>
+                <li>Planning projects and creating new projects ideas.</li>
+              </ul>
             </div>
           </div>
           <div class="time-line animate">
@@ -419,10 +508,10 @@
               <h4 class="company">
                 Slice Group
               </h4>
-              <div class="responsabilities">
-                <p>- Creation and functional development of web platforms and application</p>
-                <p>- Quickly development using Agile UX and SCRUM methodology.</p>
-              </div>
+              <ul class="responsabilities">
+                <li>Creation and functional development of web platforms and application</li>
+                <li>Quickly development using Agile UX and SCRUM methodology.</li>
+              </ul>
             </div>
           </div>
           <div class="time-line animate">
@@ -434,10 +523,10 @@
               <h4 class="company">
                 Slice Group
               </h4>
-              <div class="responsabilities">
-                <p>- Designing and preparing detailed web structures using HTML and CSS with Ruby technology.</p>
-                <p>- Measuring designs about web platforms using Responsive Design and UX interfaces.</p>
-              </div>
+              <ul class="responsabilities">
+                <li>Designing and preparing detailed web structures using HTML and CSS with Ruby technology.</li>
+                <li>Measuring designs about web platforms using Responsive Design and UX interfaces.</li>
+              </ul>
             </div>
           </div>
           <div class="time-line animate">
@@ -449,11 +538,11 @@
               <h4 class="company">
                 Slice Group
               </h4>
-              <div class="responsabilities">
-                <p>- Preparation, design and planation of UI design for web platforms with comfortable user experience.
-                </p>
-                <p>- Creation of web wireframes for a future functional development.</p>
-              </div>
+              <ul class="responsabilities">
+                <li>Preparation, design and planation of UI design for web platforms with comfortable user experience.
+                </li>
+                <li>Creation of web wireframes for a future functional development.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -505,11 +594,8 @@
               </small>
             </p>
             <div class="social-medias">
-              <a href="whatsapp://send?text=&phone=+584143639602">
+              <a href="whatsapp://send?text=&phone=+584126625353">
                 <i class="fab fa-whatsapp"></i>
-              </a>
-              <a href="https://www.facebook.com/AnyeloPetit96">
-                <i class="fab fa-facebook"></i>
               </a>
               <a href="https://www.linkedin.com/in/anyelopetit">
                 <i class="fab fa-linkedin"></i>
@@ -548,8 +634,8 @@
             width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="footer">
-          <span>Developed with professionalism and dedication by Anyelo Petit &reg; - 2018 / Last Update:
-            2020-01-12</span>
+          <span>Developed with professionalism and dedication by Anyelo Petit &reg; - <div id="year">2018</div> / Last Update:
+            2022-11-03</span>
         </div>
       </section>
     </keppler-index>
@@ -562,6 +648,7 @@
 </body>
 <script>
   $('keppler-no-edit').removeClass('no-edit-area');
+  document.getElementById('year').innerText = new Dat().getFullYear()
 </script>
 
 </html>

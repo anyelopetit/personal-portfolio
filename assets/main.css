@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Raleway:400,600');
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 .preloader {
   align-items: center;
@@ -86,16 +87,15 @@ body {
     align-items: center;
     background: none;
     display: flex;
-    height: 100vh;
     width: 100vw;
-    z-index: 0 !important;
+    z-index: 0;
   }
   #navbar ul {
     height: 100vh;
     left: 0;
     margin: 0 auto;
     opacity: 0;
-    padding: 100px 0 0;
+    padding: 50px 0 0;
     position: fixed;
     top: 0;
     transform: scale(2);
@@ -108,32 +108,35 @@ body {
     z-index: -1;
   }
   #navbar ul li a {
-    font-size: 2rem;
-    height: 50px;
-    padding: 20px;
+    font-size: 1.5rem;
+    height: 30px;
+    padding: 10px;
     transition: 0.2s ease-in-out;
     width: 100%;
     z-index: -1;
   }
   #navbar ul li a:hover, #navbar ul li a.active {
-    background: #111 66;
+    background: #6666;
     color: #f33;
     transition: 0.2s ease-in-out;
   }
+  #navbar:not(.displayed) ul {
+    display: none;
+  }
   #navbar.displayed {
-    z-index: 1 !important;
+    z-index: 1;
   }
   #navbar.displayed ul {
-    background: #111 cc;
     opacity: 1;
     transform: scale(1);
     transition: 0.2s ease-out;
     z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
   }
   #navbar.displayed ul a {
-    height: 50px;
-    font-size: 2rem;
-    padding: 20px;
+    height: 40px;
+    font-size: 1.75rem;
+    padding: 15px;
     width: 100%;
     z-index: 1;
   }
@@ -141,6 +144,7 @@ body {
 @media (min-width: 992px) {
   #navbar.sticked {
     background: rgba(0, 0, 0, .75);
+    display: none;
     margin: 0;
     transition: 0.2s ease-in-out;
   }
@@ -240,6 +244,27 @@ body {
   background: rgba(0, 0, 0, .75);
   width: 100%;
 }
+#skills .progress-table {
+  padding: 0 10%;
+  width: 100%;
+}
+#skills .progress-table th {
+  width: 10px;
+}
+#skills .progress-table th .mini-brand {
+  max-height: 20px;
+}
+#skills .progress-table td {
+  height: 5px;
+  padding: 5px;
+  position: relative;
+  width: 80%;
+}
+@media (max-width: 991px) {
+  #skills .progress-table td {
+    width: 90%;
+  }
+}
 #skills .progress {
   background-color: transparent;
   height: 20px;
@@ -298,31 +323,17 @@ body {
 #skills .progress .progress-text {
   color: #aaa;
   padding: 0;
-  width: 600px;
+  width: 20%;
+  text-align: left;
 }
-#skills .progress-table {
-  margin: 0 2%;
-}
-@media (max-width: 991px) {
-  #skills .progress-table {
-    margin: 0 10%;
+@media (max-width: 1240px) {
+  #skills .progress .progress-text {
+    color: #aaa;
+    padding: 0;
+    width: 10%;
   }
-}
-#skills .progress-table th {
-  width: 10px;
-}
-#skills .progress-table th .mini-brand {
-  max-height: 20px;
-}
-#skills .progress-table td {
-  height: 5px;
-  padding: 5px;
-  position: relative;
-  width: 80%;
-}
-@media (max-width: 991px) {
-  #skills .progress-table td {
-    width: 90%;
+  #skills .progress .progress-text span {
+    display: none;
   }
 }
 #skills .technical-skills {
@@ -357,6 +368,23 @@ body {
 #skills .technical-skills .skill:hover i {
   color: #f33;
   transition: 0.2s ease-in-out;
+}
+#references {
+  background-color: #fff;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  min-height: 300px;
+}
+#references .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#references a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 #portfolio {
   background-image: linear-gradient(rgba(360, 360, 360, .8), rgba(360, 360, 255, .8)), url('pc2.jpg');
@@ -440,10 +468,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 1600px;
-  min-height: 1000px;
+  max-height: 3000px;
+  min-height: 1700px;
   padding-bottom: 50px;
   padding-top: 50px;
+  background-position: 15%;
 }
 @media (max-width: 767px) {
   #experience {
@@ -452,20 +481,49 @@ body {
 }
 #experience .time-lines {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 767px) {
+  #experience .time-lines {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 #experience .time-line {
   position: relative;
+}
+#experience .time-line:nth-child(odd) {
+  text-align: right;
+}
+@media (max-width: 767px) {
+  #experience .time-line:nth-child(odd) {
+    text-align: left;
+  }
+}
+#experience .time-line:nth-child(even) {
+  margin-top: 150px;
+}
+@media (max-width: 767px) {
+  #experience .time-line:nth-child(even) {
+    margin-top: 0;
+  }
 }
 #experience .time-line:before {
   background: #f33;
   border-radius: 50%;
   content: '';
   height: 10px;
-  left: 50%;
   position: absolute;
-  top: 0;
-  transform: translateX(-50%);
   width: 10px;
+  transform: translateX(-3.5px);
+}
+#experience .time-line::before:nth-child(odd) {
+  top: 0;
+  right: 0;
+}
+#experience .time-line::before:nth-child(even) {
+  top: 0;
+  left: 0%;
 }
 @media (max-width: 767px) {
   #experience .time-line:before {
@@ -476,27 +534,29 @@ body {
   background: #f33;
   content: '';
   height: 100%;
+  position: absolute;
+  top: 0;
+  width: 3px;
+}
+#experience .time-line:after:nth-child(odd) {
+  top: 0;
+  transform: translateX(-50%);
+  right: 0;
+}
+#experience .time-line:after:nth-child(even) {
+  background: #f33;
+  content: '';
+  height: 100%;
   left: 50%;
   position: absolute;
   top: 0;
   transform: translateX(-50%);
   width: 3px;
-}
-@media (max-width: 767px) {
-  #experience .time-line:after {
-    left: 0%;
-  }
+  left: 0%;
 }
 #experience .time-line .job {
-  margin-left: 55%;
   position: relative;
-  width: 45%;
-}
-@media (max-width: 767px) {
-  #experience .time-line .job {
-    margin-left: 5%;
-    width: 95%;
-  }
+  margin: 0 5%;
 }
 #experience .time-line .job .date-range {
   color: #f33;
@@ -670,14 +730,13 @@ body {
   padding-top: 50px;
 }
 #contact .form {
-  background: #111 cc;
   display: flex;
   min-height: 450px;
-  padding: 50px 5%  ;
+  padding: 50px 0;
   position: relative;
   width: 100%;
 }
-@media (max-width: 620px) {
+@media (max-width: 767px) {
   #contact .form {
     display: block;
   }
@@ -685,7 +744,6 @@ body {
 #contact .form .contact-info {
   color: #eee;
   margin: 0;
-  padding: 20px 5%;
   width: 100%;
 }
 @media (max-width: 620px) {
@@ -764,7 +822,6 @@ body {
   height: 100px;
   justify-content: center;
   left: 0;
-  padding: 20px;
   position: absolute;
   text-align: center;
   width: 100%;
