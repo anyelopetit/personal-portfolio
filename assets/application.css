@@ -144,20 +144,17 @@ html, body {
     z-index: 1;
   }
 }
-@media (min-width: 992px) {
-  #navbar.sticked {
-    background: rgba(0, 0, 0, .75);
-    display: none;
-    margin: 0;
-    transition: 0.2s ease-in-out;
-  }
-  #navbar.sticked ul {
-    margin: 0;
-  }
-  #navbar.sticked ul a {
-    height: 50px;
-    width: 100px;
-  }
+#navbar.sticked {
+  background: rgba(0, 0, 0, .75);
+  margin: 0;
+  transition: 0.2s ease-in-out;
+}
+#navbar.sticked ul {
+  margin: 0;
+}
+#navbar.sticked ul a {
+  height: 50px;
+  width: 100px;
 }
 .background-container {
   background-image: linear-gradient(rgba(10, 10, 50, 1), rgba(255, 100, 100, .9)), url('office1.jpg');
