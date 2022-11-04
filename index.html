@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html id="keppler-html">
+<html>
 
 <head>
   <!-- / Title & Meta tags -->
   <!-- / Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="assets/me.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="optimized-assets/me.png" />
   <meta charset='utf-8'>
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
   <meta content='IE=edge' http-equiv='X-UA-Compatible'>
   <meta content='width=device-width, initial-scale=1' name='viewport'>
   <meta content='#f44336' name='theme-color'>
   <meta content='website' property='og:type'>
-  <meta content='assets/front.png' property='og:image'>
+  <meta content='optimized-assets/front.png' property='og:image'>
   <meta content='Anyelo Petit CV' property='og:title'>
   <meta content='Anyelo Petit CV 2022' property='og:description'>
   <meta content='https://anyelopetit.github.io/personal-portfolio/' property='og:url'>
@@ -21,7 +21,7 @@
   <meta content='Anyelo Petit CV' name='twitter:site'>
   <meta content='Anyelo Petit CV' name='twitter:title'>
   <meta content='Anyelo Petit CV 2022' name='twitter:description'>
-  <meta content='assets/me.jpeg' name='twitter:image:src'>
+  <meta content='optimized-assets/me.jpeg' name='twitter:image:src'>
   <meta content='VE' name='twitter:app:country'>
   <meta name='twitter:creator'>
   <meta name="csrf-param" content="authenticity_token" />
@@ -37,15 +37,14 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
     integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
   <link href='https://cdn.jsdelivr.net/npm/boxicons@1.9.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" media="all" href="optimized-assets/application.css" data-turbolinks-track="reload" async="async" />
   <!-- <link rel="stylesheet" media="all" href="assets/application.css" data-turbolinks-track="reload" async="async" /> -->
-  <link rel="stylesheet" media="all" href="assets/main.css" data-turbolinks-track="reload" async="async" />
   <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Patua+One" async="async" />
   <!-- / Javascripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
   </script>
-  <!-- <script src="assets/application.js" data-turbolinks-track="reload"></script> -->
-  <script src="assets/main.js" data-turbolinks-track="reload"></script>
+  <!-- <script src="optimized-assets/application.js" data-turbolinks-track="reload"></script> -->
   <!-- / Google Analytics -->
   <script>
     (function (i, s, o, g, r, a, m) {
@@ -66,590 +65,577 @@
 
 </head>
 
-<body id="keppler-editor">
-  <keppler-header>
-    <!-- Keppler Section -->
-  </keppler-header>
-  <keppler-view id='index'>
-    <keppler-index>
-      <div class="preloader">
-        <img src="assets/preloader.gif" loading="lazy">
-      </div>
-      <div class="background-container">
-        <center>
-          <nav id="navbar">
-            <div class="toggle-menu">
-              <div class="menu-bar"></div>
-              <div class="menu-bar"></div>
-              <div class="menu-bar"></div>
-            </div>
-            <ul>
-              <li><a href="#home" class="active">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#references">References</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#certificates">Certificates</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </center>
-        <section id="home" class="bg-parallax" data-speed="1">
-          <center>
-            <div class="main-text">
-              I<span>'</span>m
-              Anyelo
-              Petit<span>.</span>
-              <span class="cursor">
-                |
-              </span>
-              <p>
-                Fullstack Developer &
-                UI/UX Designer
-              </p>
-            </div>
-          </center>
-        </section>
-        <section id="about">
-          <div class="top-section about">
-            <center>
-              <img class="avatar top-content animate fadeIn" src="assets/front.png" loading="lazy">
-              <span class="white section-title top-content">About me</span>
-              <p class="description top-content">
-                Experienced Fullstack developer who is enthusiastic about
-                writing clean, efficient, and accessible code in a functional
-                framework. Committed to the total development lifecycle, the
-                maintenance of code quality and bug-free applications is of the
-                utmost importance. Expert in leveraging the latest software tools to
-                optimize data storage, e-commerce functionality, and fluidity across
-                mobile platforms. A leader in identifying opportunities for
-                applications development.
-              </p>
-
-              <a href="https://docs.google.com/document/d/1u1sEbDBVJaODxDFmUumsH0FpN_urob4hBQkUGBVKVAI/edit?usp=sharing"
-                target="_blank" download>
-                <button class="btn top-content">
-                  English CV
-                </button>
-              </a>
-
-              <a href="https://docs.google.com/document/d/1pc3PXDwLMl5sVJcxMO5qLm0YjorAWfQ_RB5ZLvD23m8/edit?usp=sharing"
-                target="_blank" download>
-                <button class="btn top-content">
-                  Spanish CV
-                </button>
-              </a>
-            </center>
-          </div>
-          <div class="container" id="skills">
-            <center>
-              <img class="avatar top-content animate fadeIn" src="assets/back.jpg" loading="lazy">
-            </center>
-            <div class="white section-title top-content">Languages</div>
-            <table class="progress-table top-content">
-              <tbody>
-                <tr class="progress">
-                  <th class="progress-text">
-                    <img class="mini-brand" src="assets/lang/ruby.png" loading="lazy">
-                    <span class="hidden-xs hidden-sm">Ruby</span>
-                  </th>
-                  <td>
-                    <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
-                      aria-valuemin="0" aria-valuemax="100" style="width: 80%; background-color: #990400;">
-                      <span class="percentage">80%</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="progress">
-                  <th class="progress-text">
-                    <img class="mini-brand" src="assets/lang/rails.png" loading="lazy">
-                    <span class="hidden-xs hidden-sm">Ruby on Rails</span>
-                  </th>
-                  <td>
-                    <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
-                      aria-valuemin="0" aria-valuemax="100" style="width: 90%; background-color: #CC0000;">
-                      <span class="percentage">90%</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="progress">
-                  <th class="progress-text">
-                    <img class="mini-brand" src="assets/lang/html5-css3.png" loading="lazy">
-                    <span class="hidden-xs hidden-sm">HTML &amp; CSS</span>
-                  </th>
-                  <td>
-                    <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
-                      aria-valuemin="0" aria-valuemax="100" style="width: 90%; background-color: #f1662b;">
-                      <span class="percentage">90%</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="progress">
-                  <th class="progress-text">
-                    <img class="mini-brand" src="assets/lang/javascript.png" loading="lazy">
-                    <span class="hidden-xs hidden-sm">JavaScript</span>
-                  </th>
-                  <td>
-                    <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
-                      aria-valuemin="0" aria-valuemax="100" style="width: 80%; background-color: #F9E034;">
-                      <span class="percentage">80%</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="progress">
-                  <th class="progress-text">
-                    <img class="mini-brand" src="assets/lang/vuejs.png" loading="lazy">
-                    <span class="hidden-xs hidden-sm">VueJS</span>
-                  </th>
-                  <td>
-                    <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
-                      aria-valuemin="0" aria-valuemax="100" style="width: 40%; background-color: #41b883;">
-                      <span class="percentage">40%</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="progress">
-                  <th class="progress-text">
-                    <img class="mini-brand" src="assets/lang/react-js.png" loading="lazy">
-                    <span class="hidden-xs hidden-sm">ReactJS</span>
-                  </th>
-                  <td>
-                    <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
-                      aria-valuemin="0" aria-valuemax="100" style="width: 60%; background-color: #08D7FD;">
-                      <span class="percentage">60%</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="progress">
-                  <th class="progress-text">
-                    <img class="mini-brand" src="assets/lang/typescript.png" loading="lazy">
-                    <span class="hidden-xs hidden-sm">Typescript</span>
-                  </th>
-                  <td>
-                    <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
-                      aria-valuemin="0" aria-valuemax="100" style="width: 50%; background-color: #007acc;">
-                      <span class="percentage">50%</span>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="progress">
-                  <th class="progress-text">
-                    <img class="mini-brand" src="assets/lang/postgres.png" loading="lazy">
-                    <span class="hidden-xs hidden-sm">PostgreSQL</span>
-                  </th>
-                  <td>
-                    <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
-                      aria-valuemin="0" aria-valuemax="100" style="width: 70%; background-color: #31648f;">
-                      <span class="percentage">70%</span>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="white section-title top-content">Technical Skills</div>
-            <div class="technical-skills top-content">
-              <div class="skill animate fadeInUp">
-                <i class="bx bx-diamond"></i>
-                <p>
-                  Experienced Ruby on Rails developer with competencies in Jquery, and Ajax.
-                </p>
-              </div>
-              <div class="skill animate fadeInUp">
-                <i class="bx bxl-javascript"></i>
-                <p>
-                  Knowledgeable and certified in JavaScript.
-                </p>
-              </div>
-              <div class="skill animate fadeInUp">
-                <i class="bx bx-wrench"></i>
-                <p>
-                  Familiar with the automation of testing platforms.
-                </p>
-              </div>
-              <div class="skill animate fadeInUp">
-                <i class="bx bx-hdd"></i>
-                <p>
-                  Able to integrate several databases together to form one database system.
-                </p>
-              </div>
-              <div class="skill animate fadeInUp">
-                <i class="bx bx-paint"></i>
-                <p>
-                  Masterful with UI styling tool Bootstrap and the Sass CSS preprocessor.
-                </p>
-              </div>
-              <div class="skill animate fadeInUp">
-                <i class="bx bxs-magic-wand"></i>
-                <p>
-                  Clean code writer that is fully versed in object-oriented coding.
-                </p>
-              </div>
-              <div class="skill animate fadeInUp">
-                <i class="bx bx-bar-chart-alt"></i>
-                <p>
-                  Committed to scalable design and function as well as seamless integration.
-                </p>
-              </div>
-              <div class="skill animate fadeInUp">
-                <i class="bx bx-align-left"></i>
-                <p>
-                  Competent with templating languages on the server side such as Slim and Haml.
-                </p>
-              </div>
-              <div class="skill animate fadeInUp">
-                <i class="bx bx-dollar-circle"></i>
-                <p>
-                  Creative with database construction to best support application monetization.
-                </p>
-              </div>
-              <div class="skill animate fadeInUp">
-                <i class="bx bxl-git"></i>
-                <p>
-                  Agile experience using Git versions control for creation and manipulation of code repositories.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <section class="container" id="references">
-        <div class="dark section-title">Companies I worked for</div>
-        <div class="container">
-          <a href="https://www.rankmi.com/" target="_blank" width="200">
-            <img src="assets/companies/rankmi.png" alt="Rankmi" height="50" loading="lazy">
-          </a>
-          <a href="https://www.shipit.cl/" target="_blank" width="200">
-            <img src="assets/companies/shipit.png" alt="Shipit" height="30" loading="lazy">
-          </a>
-          <a href="https://www.vive.travel/" target="_blank" width="200">
-            <img src="assets/companies/vive-tech.png" alt="Vive" height="50" loading="lazy">
-          </a>
-          <a href="https://elitgon.com/" target="_blank" width="200">
-            <img src="assets/companies/elitgon.png" alt="Elitgon" height="40" loading="lazy">
-          </a>
-          <a href="https://slicegroup.xyz/" target="_blank" width="200">
-            <img src="assets/companies/slice.png" alt="Slice Group" height="60" loading="lazy">
-          </a>
+<body>
+  <div class="preloader">
+    <video autoplay muted loop>
+      <source src="optimized-assets/preloader.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="background-container">
+    <center>
+      <nav id="navbar">
+        <div class="toggle-menu">
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
         </div>
-      </section>
-      <section id="portfolio">
-        <div class="dark section-title">Portfolio</div>
-        <div class="projects-container">
-          <a class="project" href="http://keppleradmin.com/">
-            <img class="project-image" src="assets/projects/keppler.png" loading="lazy">
-            <div class="project-description">
-              <h3 class="project-name">Keppler Admin</h3>
-              <p>
-                Keppler Admin is a CMS with a development environment that has a base of gems and integrated, in this
-                way will accelerate
-                the development of cutting-edge applications under the Ruby on Rails platform.
-              </p>
-            </div>
-          </a>
-          <a class="project" href="http://sandbox.keppleradmin.com/">
-            <img class="project-image" src="assets/projects/sandbox.png" loading="lazy">
-            <div class="project-description">
-              <h3 class="project-name">Keppler Sandbox</h3>
-              <p>
-                Keppler Sandbox is a production environment where you can perform unit tests and each user has a
-                different database to
-                make their changes
-              </p>
-            </div>
-          </a>
-          <a class="project" href="http://tucana.com.ec/">
-            <img class="project-image" src="assets/projects/tucana.png" loading="lazy">
-            <div class="project-description">
-              <h3 class="project-name">Tucana Designs</h3>
-              <p>
-                Young entrepreneurs that started few years ago building a Brand that provides apparel with trendy style,
-                accessories and art items with unique designs made by Ecuadorians with local materials.
-              </p>
-            </div>
-          </a>
-          <a class="project" href="www.pranacomunica.co">
-            <img class="project-image" src="assets/projects/prana.png" loading="lazy">
-            <div class="project-description">
-              <h3 class="project-name">Prana Comunica</h3>
-              <p>
-                Producer of audiovisual projects and events for the development of human potential.
-              </p>
-            </div>
-          </a>
-          <a class="project" href="http://babytaso.com/">
-            <img class="project-image" src="assets/projects/babytaso.png" loading="lazy">
-            <div class="project-description">
-              <h3 class="project-name">Babytaso</h3>
-              <p>
-                Capture moments in the form of memories.
-              </p>
-            </div>
-          </a>
-          <a class="project" href="http://arismendyandrade.com">
-            <img class="project-image" src="assets/projects/arismendy.png" loading="lazy">
-            <div class="project-description">
-              <h3 class="project-name">Arismedy Andrade</h3>
-              <p>
-                Provides construction engineering services and rental of equipment and machinery to companies in the
-                industrial and construction sectors, in order to provide customers with the possibility of finding in a
-                single company, an integral strategic partner for the development of their projects .
-              </p>
-            </div>
-          </a>
-          </br>
-          <a href="portfolio.html" style="width: 100%;text-align: center;">
-            <button class="btn pink">
-              More projects
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#references">References</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </center>
+    <section id="home" class="bg-parallax" data-speed="1">
+      <center>
+        <div class="main-text">
+          I<span>'</span>m
+          Anyelo
+          Petit<span>.</span>
+          <span class="cursor">
+            |
+          </span>
+          <p>
+            Fullstack Developer &
+            UI/UX Designer
+          </p>
+        </div>
+      </center>
+    </section>
+    <section id="about">
+      <div class="top-section about">
+        <center>
+          <img class="avatar top-content animate fadeIn" src="optimized-assets/front.png" loading="lazy">
+          <span class="white section-title top-content">About me</span>
+          <p class="description top-content">
+            Experienced Fullstack developer who is enthusiastic about
+            writing clean, efficient, and accessible code in a functional
+            framework. Committed to the total development lifecycle, the
+            maintenance of code quality and bug-free applications is of the
+            utmost importance. Expert in leveraging the latest software tools to
+            optimize data storage, e-commerce functionality, and fluidity across
+            mobile platforms. A leader in identifying opportunities for
+            applications development.
+          </p>
+
+          <a href="https://docs.google.com/document/d/1u1sEbDBVJaODxDFmUumsH0FpN_urob4hBQkUGBVKVAI/edit?usp=sharing"
+            target="_blank" download>
+            <button class="btn top-content">
+              English CV
             </button>
           </a>
-        </div>
-      </section>
-      <section id="experience">
-        <div class="white section-title">Experience</div>
-        <div class="time-lines">
-          <div class="time-line animate">
-            <div class="job animate fadeInLeft">
-              <h5 class="date-range"> November 2021 - Currently</h5>
-              <h3 class="charge">
-                Sr. Backend Developer
-              </h3>
-              <h4 class="company">
-                Rankmi
-              </h4>
-              <ul class="responsabilities">
-                <li>Creating and design of new features for Rails APIs from microservices.</li>
-                <li>Development of endpoints in a Rest API to be consumed from ReactJS.</li>
-                <li>Development of new changes and functional improvements in Rails.</li>
-                <li>Management of queues and messages through AWS SNS and AWS SQS.</li>
-                <li>Creating unit tests at the server level with Rspec.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="time-line animate">
-            <div class="job animate fadeInLeft">
-              <h5 class="date-range"> June 2021 - November 2021</h5>
-              <h3 class="charge">
-                Sr. Rails Developer
-              </h3>
-              <h4 class="company">
-                Shipit CL
-              </h4>
-              <ul class="responsabilities">
-                <li>Maintain and design new functionalities in a project with more than 15 repositories, where each one used different technologies and could be considered as a microservice within the project.</li>
-                <li>Development of endpoints in a Rest API to be consumed from ReactJS.</li>
-                <li>Creating unit tests using Rspec for models, controllers, services, and with jobs.</li>
-                <li>Development of new changes and functional improvements in ReactJS.</li>
-                <li>Creating unit tests at the client level with Cypress.</li>
-                <li>Use of Mixpanel for the creation of statistics of new functions applied.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="time-line animate">
-            <div class="job animate fadeInLeft">
-              <h5 class="date-range"> September 2020 - June 2021</h5>
-              <h3 class="charge">
-                Ssr. Rails Developer
-              </h3>
-              <h4 class="company">
-                ViveTech
-              </h4>
-              <ul class="responsabilities">
-                <li>Take responsibility for maintaining and developing new components of a robust and reactive web E-commerce using Rails 6 and Alpine JS.</li>
-                <li>Creation of images and virtual environments with Docker Compose to later be uploaded to the cloud with Google Cloud Platform.</li>
-                <li>Use of YouTrack for the most efficient handling of tasks in a SCRUM workflow.</li>
-                <li>Management of environments, stores and UI themes for each store in its respective subdomain.</li>
-                <li>Loading and unloading of product inventories through Axlsx and Roo gems.</li>
-                <li>Management of States for each Product, Category and Subcategory.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="time-line animate">
-            <div class="job animate fadeInLeft">
-              <h5 class="date-range"> June 2019 - September 2020</h5>
-              <h3 class="charge">
-                Ruby Developer
-              </h3>
-              <h4 class="company">
-                Elitgon
-              </h4>
-              <ul class="responsabilities">
-                <li>Taking responsibility for developing new components of an interactive web application using Ruby on
-                  Rails.</li>
-                <li>Creating and optimizing a API Rest for the use from an iOS mobile application.</li>
-                <li>Creating quality UI development with Ruby unit and system testing.</li>
-                <li>Contributing with other team members via coding reviews, and technical talks.</li>
-                <li>Suggesting enhancements to existing components that contributes to product goals.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="time-line animate">
-            <div class="job animate fadeInLeft">
-              <h5 class="date-range"> January 2018 - June 2019</h5>
-              <h3 class="charge">
-                Back-End Coordinator
-              </h3>
-              <h4 class="company">
-                Slice Group
-              </h4>
-              <ul class="responsabilities">
-                <li>Leadership for a team of approximately nine 9+ Ruby, Python and PHP developers.</li>
-                <li>Control of process and monitoring production of Back-End development department.</li>
-                <li>Planning projects and creating new projects ideas.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="time-line animate">
-            <div class="job animate fadeInLeft">
-              <h5 class="date-range">June 2017 – January 2018</h5>
-              <h3 class="charge">
-                Junior Ruby on Rails Developer
-              </h3>
-              <h4 class="company">
-                Slice Group
-              </h4>
-              <ul class="responsabilities">
-                <li>Creation and functional development of web platforms and application</li>
-                <li>Quickly development using Agile UX and SCRUM methodology.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="time-line animate">
-            <div class="job animate fadeInLeft">
-              <h5 class="date-range">September 2016 – June 2017</h5>
-              <h3 class="charge">
-                Front-End Developer
-              </h3>
-              <h4 class="company">
-                Slice Group
-              </h4>
-              <ul class="responsabilities">
-                <li>Designing and preparing detailed web structures using HTML and CSS with Ruby technology.</li>
-                <li>Measuring designs about web platforms using Responsive Design and UX interfaces.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="time-line animate">
-            <div class="job animate fadeInLeft">
-              <h5 class="date-range">January 2016 – September 2016</h5>
-              <h3 class="charge">
-                UI/UX Designer
-              </h3>
-              <h4 class="company">
-                Slice Group
-              </h4>
-              <ul class="responsabilities">
-                <li>Preparation, design and planation of UI design for web platforms with comfortable user experience.
-                </li>
-                <li>Creation of web wireframes for a future functional development.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="certificates">
-        <div class="dark section-title">Certificates</div>
-        <div class="certificates carousel">
-          <div class="control prev"><i class="bx-md bx bx-chevron-left"></i></div>
-          <div class="carousel-content">
-            <div class="item active rotate">
-              <img src="assets/certificates/curso-desarrollo-backend.png" loading="lazy">
-            </div>
-            <div class="item ">
-              <img src="assets/certificates/curso-ror.png" loading="lazy">
-            </div>
-            <div class="item ">
-              <img src="assets/certificates/curso-ruby.png" loading="lazy">
-            </div>
-            <div class="item ">
-              <img src="assets/certificates/curso-arq-frontend.png" loading="lazy">
-            </div>
-            <div class="item ">
-              <img src="assets/certificates/curso-html-fundamental.jpg" loading="lazy">
-            </div>
-            <div class="item ">
-              <img src="assets/certificates/curso-jquery.jpg" loading="lazy">
-            </div>
-            <div class="item ">
-              <img src="assets/certificates/curso-ruby.jpg" loading="lazy">
-            </div>
-          </div>
-          <div class="control next"><i class="bx-md bx bx-chevron-right"></i></div>
-        </div>
-      </section>
-      <section id="contact">
-        <div class="form">
-          <div class="contact-info">
-            <h2>
-              CONTACT ME
-            </h2>
-            <p>
-              I'm always willing and available to receive new work proposals. Let's start working together!
-            </p>
-            <p>
-              <small>
-                Email: anyelopetit@gmail.com
-                <br>
-                Tel: +58 412 6625353
-              </small>
-            </p>
-            <div class="social-medias">
-              <a href="whatsapp://send?text=&phone=+584126625353">
-                <i class="fab fa-whatsapp"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/anyelopetit">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://www.github.com/anyelopetit">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <!-- <form class="simple_form new_message" id="new_message" novalidate="novalidate" action="/app/contact_us/messages/send" accept-charset="UTF-8" method="post">
-        <input name="utf8" type="hidden" value="&#x2713;" />
-        <input type="hidden" name="authenticity_token" value="FbMIKR7v7QzFReDQSq6fOhKjVz1hUdY1WmFCwbZZ7wa3bdagLSbyoWxrAWtGL+SUQHdXr6mfI9qwrcb69FiV5g==" />
-        
-        <div class="keppler-custom-field form-group string optional message_name">
-          <label class="control-label string optional" for="message_name">Name</label>
-          <input class="form-control string optional" type="text" name="message[name]" id="message_name" />
-        </div>
-        <div class="keppler-custom-field form-group email optional message_from_email">
-          <label class="control-label email optional" for="message_from_email">Email</label>
-          <input class="form-control string email optional form-control" type="email" name="message[from_email]" id="message_from_email" />
-        </div>
-        <div class="keppler-custom-field form-group string optional message_subject">
-          <label class="control-label string optional" for="message_subject">Subject</label>
-          <input class="form-control string optional" type="text" name="message[subject]" id="message_subject" />
-        </div>
-        <div class="keppler-custom-field form-group text optional message_content">
-          <label class="control-label text optional" for="message_content">Content</label>
-          <textarea class="form-control text optional" name="message[content]" id="message_content"></textarea>
-        </div>
-        <div id="recaptcha"></div>
-        <input type="submit" name="commit" value="Send" data-disable-with="Send" />
-        
-      </form> -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15626.703227489474!2d-70.18725509999999!3d11.717358549999998!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1553220802913"
-            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        <div class="footer">
-          Developed with professionalism and dedication by
-          <b>&nbsp;Anyelo Petit &reg;&nbsp;</b>
-          - 2018 / Last Update:
-            2022-11-03
-        </div>
-      </section>
-    </keppler-index>
-  </keppler-view>
 
-  <keppler-footer>
-    <!-- Keppler Section -->
-  </keppler-footer>
-  <!-- end keppler-footer -->
+          <a href="https://docs.google.com/document/d/1pc3PXDwLMl5sVJcxMO5qLm0YjorAWfQ_RB5ZLvD23m8/edit?usp=sharing"
+            target="_blank" download>
+            <button class="btn top-content">
+              Spanish CV
+            </button>
+          </a>
+        </center>
+      </div>
+      <div class="container" id="skills">
+        <center>
+          <img class="avatar top-content animate fadeIn" src="optimized-assets/back.jpg" loading="lazy">
+        </center>
+        <div class="white section-title top-content">Languages</div>
+        <table class="progress-table top-content">
+          <tbody>
+            <tr class="progress">
+              <th class="progress-text">
+                <img class="mini-brand" src="optimized-assets/lang/ruby.png" loading="lazy">
+                <span class="hidden-xs hidden-sm">Ruby</span>
+              </th>
+              <td>
+                <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 80%; background-color: #990400;">
+                  <span class="percentage">80%</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="progress">
+              <th class="progress-text">
+                <img class="mini-brand" src="optimized-assets/lang/rails.png" loading="lazy">
+                <span class="hidden-xs hidden-sm">Ruby on Rails</span>
+              </th>
+              <td>
+                <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 90%; background-color: #CC0000;">
+                  <span class="percentage">90%</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="progress">
+              <th class="progress-text">
+                <img class="mini-brand" src="optimized-assets/lang/html5-css3.png" loading="lazy">
+                <span class="hidden-xs hidden-sm">HTML &amp; CSS</span>
+              </th>
+              <td>
+                <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 90%; background-color: #f1662b;">
+                  <span class="percentage">90%</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="progress">
+              <th class="progress-text">
+                <img class="mini-brand" src="optimized-assets/lang/javascript.png" loading="lazy">
+                <span class="hidden-xs hidden-sm">JavaScript</span>
+              </th>
+              <td>
+                <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 80%; background-color: #F9E034;">
+                  <span class="percentage">80%</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="progress">
+              <th class="progress-text">
+                <img class="mini-brand" src="optimized-assets/lang/vuejs.png" loading="lazy">
+                <span class="hidden-xs hidden-sm">VueJS</span>
+              </th>
+              <td>
+                <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 40%; background-color: #41b883;">
+                  <span class="percentage">40%</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="progress">
+              <th class="progress-text">
+                <img class="mini-brand" src="optimized-assets/lang/react-js.png" loading="lazy">
+                <span class="hidden-xs hidden-sm">ReactJS</span>
+              </th>
+              <td>
+                <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 60%; background-color: #08D7FD;">
+                  <span class="percentage">60%</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="progress">
+              <th class="progress-text">
+                <img class="mini-brand" src="optimized-assets/lang/typescript.png" loading="lazy">
+                <span class="hidden-xs hidden-sm">Typescript</span>
+              </th>
+              <td>
+                <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 50%; background-color: #007acc;">
+                  <span class="percentage">50%</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="progress">
+              <th class="progress-text">
+                <img class="mini-brand" src="optimized-assets/lang/postgres.png" loading="lazy">
+                <span class="hidden-xs hidden-sm">PostgreSQL</span>
+              </th>
+              <td>
+                <div class="progress-bar animate grow-width" role="progressbar" aria-valuenow="100"
+                  aria-valuemin="0" aria-valuemax="100" style="width: 70%; background-color: #31648f;">
+                  <span class="percentage">70%</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="white section-title top-content">Technical Skills</div>
+        <div class="technical-skills top-content">
+          <div class="skill animate fadeInUp">
+            <i class="bx bx-diamond"></i>
+            <p>
+              Experienced Ruby on Rails developer with competencies in Jquery, and Ajax.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="bx bxl-javascript"></i>
+            <p>
+              Knowledgeable and certified in JavaScript.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="bx bx-wrench"></i>
+            <p>
+              Familiar with the automation of testing platforms.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="bx bx-hdd"></i>
+            <p>
+              Able to integrate several databases together to form one database system.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="bx bx-paint"></i>
+            <p>
+              Masterful with UI styling tool Bootstrap and the Sass CSS preprocessor.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="bx bxs-magic-wand"></i>
+            <p>
+              Clean code writer that is fully versed in object-oriented coding.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="bx bx-bar-chart-alt"></i>
+            <p>
+              Committed to scalable design and function as well as seamless integration.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="bx bx-align-left"></i>
+            <p>
+              Competent with templating languages on the server side such as Slim and Haml.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="bx bx-dollar-circle"></i>
+            <p>
+              Creative with database construction to best support application monetization.
+            </p>
+          </div>
+          <div class="skill animate fadeInUp">
+            <i class="bx bxl-git"></i>
+            <p>
+              Agile experience using Git versions control for creation and manipulation of code repositories.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="container" id="references">
+    <div class="dark section-title">Companies I worked for</div>
+    <div class="container">
+      <a href="https://www.rankmi.com/" target="_blank" width="200">
+        <img src="optimized-assets/companies/rankmi.png" alt="Rankmi" height="50" loading="lazy">
+      </a>
+      <a href="https://www.shipit.cl/" target="_blank" width="200">
+        <img src="optimized-assets/companies/shipit.png" alt="Shipit" height="30" loading="lazy">
+      </a>
+      <a href="https://www.vive.travel/" target="_blank" width="200">
+        <img src="optimized-assets/companies/vive-tech.png" alt="Vive" height="50" loading="lazy">
+      </a>
+      <a href="https://elitgon.com/" target="_blank" width="200">
+        <img src="optimized-assets/companies/elitgon.png" alt="Elitgon" height="40" loading="lazy">
+      </a>
+      <a href="https://slicegroup.xyz/" target="_blank" width="200">
+        <img src="optimized-assets/companies/slice.png" alt="Slice Group" height="60" loading="lazy">
+      </a>
+    </div>
+  </section>
+  <section id="portfolio">
+    <div class="dark section-title">Portfolio</div>
+    <div class="projects-container">
+      <a class="project" href="http://keppleradmin.com/">
+        <img class="project-image" src="optimized-assets/projects/keppler.png" loading="lazy">
+        <div class="project-description">
+          <h3 class="project-name">Keppler Admin</h3>
+          <p>
+            Keppler Admin is a CMS with a development environment that has a base of gems and integrated, in this
+            way will accelerate
+            the development of cutting-edge applications under the Ruby on Rails platform.
+          </p>
+        </div>
+      </a>
+      <a class="project" href="http://sandbox.keppleradmin.com/">
+        <img class="project-image" src="optimized-assets/projects/sandbox.png" loading="lazy">
+        <div class="project-description">
+          <h3 class="project-name">Keppler Sandbox</h3>
+          <p>
+            Keppler Sandbox is a production environment where you can perform unit tests and each user has a
+            different database to
+            make their changes
+          </p>
+        </div>
+      </a>
+      <a class="project" href="http://tucana.com.ec/">
+        <img class="project-image" src="optimized-assets/projects/tucana.png" loading="lazy">
+        <div class="project-description">
+          <h3 class="project-name">Tucana Designs</h3>
+          <p>
+            Young entrepreneurs that started few years ago building a Brand that provides apparel with trendy style,
+            accessories and art items with unique designs made by Ecuadorians with local materials.
+          </p>
+        </div>
+      </a>
+      <a class="project" href="www.pranacomunica.co">
+        <img class="project-image" src="optimized-assets/projects/prana.png" loading="lazy">
+        <div class="project-description">
+          <h3 class="project-name">Prana Comunica</h3>
+          <p>
+            Producer of audiovisual projects and events for the development of human potential.
+          </p>
+        </div>
+      </a>
+      <a class="project" href="http://babytaso.com/">
+        <img class="project-image" src="optimized-assets/projects/babytaso.png" loading="lazy">
+        <div class="project-description">
+          <h3 class="project-name">Babytaso</h3>
+          <p>
+            Capture moments in the form of memories.
+          </p>
+        </div>
+      </a>
+      <a class="project" href="http://arismendyandrade.com">
+        <img class="project-image" src="optimized-assets/projects/arismendy.png" loading="lazy">
+        <div class="project-description">
+          <h3 class="project-name">Arismedy Andrade</h3>
+          <p>
+            Provides construction engineering services and rental of equipment and machinery to companies in the
+            industrial and construction sectors, in order to provide customers with the possibility of finding in a
+            single company, an integral strategic partner for the development of their projects .
+          </p>
+        </div>
+      </a>
+      </br>
+      <a href="portfolio.html" style="width: 100%;text-align: center;">
+        <button class="btn pink">
+          More projects
+        </button>
+      </a>
+    </div>
+  </section>
+  <section id="experience">
+    <div class="white section-title">Experience</div>
+    <div class="time-lines">
+      <div class="time-line animate">
+        <div class="job animate fadeInLeft">
+          <h5 class="date-range"> November 2021 - Currently</h5>
+          <h3 class="charge">
+            Sr. Backend Developer
+          </h3>
+          <h4 class="company">
+            Rankmi
+          </h4>
+          <ul class="responsabilities">
+            <li>Creating and design of new features for Rails APIs from microservices.</li>
+            <li>Development of endpoints in a Rest API to be consumed from ReactJS.</li>
+            <li>Development of new changes and functional improvements in Rails.</li>
+            <li>Management of queues and messages through AWS SNS and AWS SQS.</li>
+            <li>Creating unit tests at the server level with Rspec.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="time-line animate">
+        <div class="job animate fadeInLeft">
+          <h5 class="date-range"> June 2021 - November 2021</h5>
+          <h3 class="charge">
+            Sr. Rails Developer
+          </h3>
+          <h4 class="company">
+            Shipit CL
+          </h4>
+          <ul class="responsabilities">
+            <li>Maintain and design new functionalities in a project with more than 15 repositories, where each one used different technologies and could be considered as a microservice within the project.</li>
+            <li>Development of endpoints in a Rest API to be consumed from ReactJS.</li>
+            <li>Creating unit tests using Rspec for models, controllers, services, and with jobs.</li>
+            <li>Development of new changes and functional improvements in ReactJS.</li>
+            <li>Creating unit tests at the client level with Cypress.</li>
+            <li>Use of Mixpanel for the creation of statistics of new functions applied.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="time-line animate">
+        <div class="job animate fadeInLeft">
+          <h5 class="date-range"> September 2020 - June 2021</h5>
+          <h3 class="charge">
+            Ssr. Rails Developer
+          </h3>
+          <h4 class="company">
+            ViveTech
+          </h4>
+          <ul class="responsabilities">
+            <li>Take responsibility for maintaining and developing new components of a robust and reactive web E-commerce using Rails 6 and Alpine JS.</li>
+            <li>Creation of images and virtual environments with Docker Compose to later be uploaded to the cloud with Google Cloud Platform.</li>
+            <li>Use of YouTrack for the most efficient handling of tasks in a SCRUM workflow.</li>
+            <li>Management of environments, stores and UI themes for each store in its respective subdomain.</li>
+            <li>Loading and unloading of product inventories through Axlsx and Roo gems.</li>
+            <li>Management of States for each Product, Category and Subcategory.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="time-line animate">
+        <div class="job animate fadeInLeft">
+          <h5 class="date-range"> June 2019 - September 2020</h5>
+          <h3 class="charge">
+            Ruby Developer
+          </h3>
+          <h4 class="company">
+            Elitgon
+          </h4>
+          <ul class="responsabilities">
+            <li>Taking responsibility for developing new components of an interactive web application using Ruby on
+              Rails.</li>
+            <li>Creating and optimizing a API Rest for the use from an iOS mobile application.</li>
+            <li>Creating quality UI development with Ruby unit and system testing.</li>
+            <li>Contributing with other team members via coding reviews, and technical talks.</li>
+            <li>Suggesting enhancements to existing components that contributes to product goals.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="time-line animate">
+        <div class="job animate fadeInLeft">
+          <h5 class="date-range"> January 2018 - June 2019</h5>
+          <h3 class="charge">
+            Back-End Coordinator
+          </h3>
+          <h4 class="company">
+            Slice Group
+          </h4>
+          <ul class="responsabilities">
+            <li>Leadership for a team of approximately nine 9+ Ruby, Python and PHP developers.</li>
+            <li>Control of process and monitoring production of Back-End development department.</li>
+            <li>Planning projects and creating new projects ideas.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="time-line animate">
+        <div class="job animate fadeInLeft">
+          <h5 class="date-range">June 2017 – January 2018</h5>
+          <h3 class="charge">
+            Junior Ruby on Rails Developer
+          </h3>
+          <h4 class="company">
+            Slice Group
+          </h4>
+          <ul class="responsabilities">
+            <li>Creation and functional development of web platforms and application</li>
+            <li>Quickly development using Agile UX and SCRUM methodology.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="time-line animate">
+        <div class="job animate fadeInLeft">
+          <h5 class="date-range">September 2016 – June 2017</h5>
+          <h3 class="charge">
+            Front-End Developer
+          </h3>
+          <h4 class="company">
+            Slice Group
+          </h4>
+          <ul class="responsabilities">
+            <li>Designing and preparing detailed web structures using HTML and CSS with Ruby technology.</li>
+            <li>Measuring designs about web platforms using Responsive Design and UX interfaces.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="time-line animate">
+        <div class="job animate fadeInLeft">
+          <h5 class="date-range">January 2016 – September 2016</h5>
+          <h3 class="charge">
+            UI/UX Designer
+          </h3>
+          <h4 class="company">
+            Slice Group
+          </h4>
+          <ul class="responsabilities">
+            <li>Preparation, design and planation of UI design for web platforms with comfortable user experience.
+            </li>
+            <li>Creation of web wireframes for a future functional development.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="certificates">
+    <div class="dark section-title">Certificates</div>
+    <div class="certificates carousel">
+      <div class="control prev"><i class="bx-md bx bx-chevron-left"></i></div>
+      <div class="carousel-content">
+        <div class="item active rotate">
+          <img src="optimized-assets/certificates/curso-desarrollo-backend.png" loading="lazy">
+        </div>
+        <div class="item ">
+          <img src="optimized-assets/certificates/curso-ror.png" loading="lazy">
+        </div>
+        <div class="item ">
+          <img src="optimized-assets/certificates/curso-ruby.png" loading="lazy">
+        </div>
+        <div class="item ">
+          <img src="optimized-assets/certificates/curso-arq-frontend.png" loading="lazy">
+        </div>
+        <div class="item ">
+          <img src="optimized-assets/certificates/curso-html-fundamental.jpg" loading="lazy">
+        </div>
+        <div class="item ">
+          <img src="optimized-assets/certificates/curso-jquery.jpg" loading="lazy">
+        </div>
+        <div class="item ">
+          <img src="optimized-assets/certificates/curso-ruby.jpg" loading="lazy">
+        </div>
+      </div>
+      <div class="control next"><i class="bx-md bx bx-chevron-right"></i></div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="form">
+      <div class="contact-info">
+        <h2>
+          CONTACT ME
+        </h2>
+        <p>
+          I'm always willing and available to receive new work proposals. Let's start working together!
+        </p>
+        <p>
+          <small>
+            Email: anyelopetit@gmail.com
+            <br>
+            Tel: +58 412 6625353
+          </small>
+        </p>
+        <div class="social-medias">
+          <a href="whatsapp://send?text=&phone=+584126625353">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/anyelopetit">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.github.com/anyelopetit">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <!-- <form class="simple_form new_message" id="new_message" novalidate="novalidate" action="/app/contact_us/messages/send" accept-charset="UTF-8" method="post">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input type="hidden" name="authenticity_token" value="FbMIKR7v7QzFReDQSq6fOhKjVz1hUdY1WmFCwbZZ7wa3bdagLSbyoWxrAWtGL+SUQHdXr6mfI9qwrcb69FiV5g==" />
+    
+    <div class="keppler-custom-field form-group string optional message_name">
+      <label class="control-label string optional" for="message_name">Name</label>
+      <input class="form-control string optional" type="text" name="message[name]" id="message_name" />
+    </div>
+    <div class="keppler-custom-field form-group email optional message_from_email">
+      <label class="control-label email optional" for="message_from_email">Email</label>
+      <input class="form-control string email optional form-control" type="email" name="message[from_email]" id="message_from_email" />
+    </div>
+    <div class="keppler-custom-field form-group string optional message_subject">
+      <label class="control-label string optional" for="message_subject">Subject</label>
+      <input class="form-control string optional" type="text" name="message[subject]" id="message_subject" />
+    </div>
+    <div class="keppler-custom-field form-group text optional message_content">
+      <label class="control-label text optional" for="message_content">Content</label>
+      <textarea class="form-control text optional" name="message[content]" id="message_content"></textarea>
+    </div>
+    <div id="recaptcha"></div>
+    <input type="submit" name="commit" value="Send" data-disable-with="Send" />
+    
+  </form> -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15626.703227489474!2d-70.18725509999999!3d11.717358549999998!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1553220802913"
+        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="footer">
+      Developed with professionalism and dedication by
+      <b>&nbsp;Anyelo Petit &reg;&nbsp;</b>
+      - 2018 / Last Update:
+        2022-11-03
+    </div>
+  </section>
+  <script src="optimized-assets/application.js" data-turbolinks-track="reload"></script>
 </body>
-<script>
-  $('keppler-no-edit').removeClass('no-edit-area');
-</script>
-
 </html>
